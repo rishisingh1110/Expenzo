@@ -50,7 +50,7 @@ export const FinancialRecordsProvider = ({
   }, [user]);
 
   const addRecord = async (record: FinancialRecord) => {
-    const response = await fetch("${backend_url}/financial-records", {
+    const response = await fetch(`${backend_url}/financial-records`, {
       method: "POST",
       body: JSON.stringify(record),
       headers: {

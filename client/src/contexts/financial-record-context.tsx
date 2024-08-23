@@ -22,7 +22,8 @@ export const FinancialRecordsContext = createContext<
   FinancialRecordsContextType | undefined
 >(undefined);
 
-const backend_url = import.meta.env.BACKEND_URL;
+const backend_url = import.meta.env.VITE_BACKEND_URL;
+console.log("backend URL came", backend_url);
 
 export const FinancialRecordsProvider = ({
   children,
